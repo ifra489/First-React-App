@@ -1,4 +1,7 @@
 const DonationCards = () => {
+    const handleDonate = (category) => {
+      alert(`Thank you for your donation to ${category}!`);
+    };
   return (
     <section
       style={{
@@ -7,7 +10,6 @@ const DonationCards = () => {
         justifyContent: "center",
         flexWrap: "wrap",
         gap: "1rem",
-      
       }}
     >
       <div
@@ -23,6 +25,7 @@ const DonationCards = () => {
             border: "none",
             borderRadius: "4px",
           }}
+            onClick={() => handleDonate("Education")}
         >
           Donate Now
         </button>
@@ -41,6 +44,7 @@ const DonationCards = () => {
             border: "none",
             borderRadius: "4px",
           }}
+          onClick={() => handleDonate("HealthCare")}
         >
           Donate Now
         </button>
@@ -61,6 +65,7 @@ const DonationCards = () => {
             border: "none",
             borderRadius: "4px",
           }}
+          onClick={() => handleDonate("Food Aid")}
         >
           Donate Now
         </button>
@@ -81,6 +86,7 @@ const DonationCards = () => {
             border: "none",
             borderRadius: "4px",
           }}
+            onClick={() => handleDonate("Emergency Relief")}
         >
           Donate Now
         </button>
@@ -102,6 +108,7 @@ const DonationCards = () => {
             border: "none",
             borderRadius: "4px",
           }}
+            onClick={() => handleDonate("Orphan Support")}
         >
           Donate Now
         </button>
